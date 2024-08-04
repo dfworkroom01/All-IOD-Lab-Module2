@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 1.	Add a title using the HTML title tag. -->
+    <title>Module 2 Lab 1</title>
+
+    <!-- 2.	Add metatags using HTML <meta> tags for the following 5 items:
+charset, description, keywords, author, viewport-->
+
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Module 2 Lab 1 Step-by-Step Application"
+    />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+    <meta name="author" content="Dewi Fitriasari" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--By default, tables don't have any styles. Add basic styling by copying the code below to the head section of the page:-->
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="index.html">Home</a>
+        <a href="form.html">Form</a>
+      </nav>
+    </header>
+
+    <main></main>
+
+    <!-- 1.	Add 3 divs next to each other at the beginning of the body section 
+ and put some distinctive content into each of the divs,  e.g.
+<div>HTML</div> <div>CSS</div> <div>JavaScript</div> -->
+
+    <!-- Add a page headline - add an h1 tag above your article with any content, e.g. "My HTML learning journey"-->
+    <h1>How to Use HTML Elements</h1>
+
+    <!--Add an article headline - add an h2 tag within the article tag with any content, 
+    e.g. "Learning elements - div, span, p, pre, ul, li, ol, article". 
+    Consider the difference between the page headline and article headline.-->
+
+    <article>
+      <h2>The Elements: Part 1</h2>
+
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+
+      <!--Below the divs, add 3 spans next to each other and put some distinctive content into each span. 
+  Observe the difference between block and inline elements in the browser. -->
+
+      <span style="color: blue">HTML,</span>
+      <span style="color: darkolivegreen; font-weight: bold">CSS,</span>
+      <span style="color: rgb(83, 27, 27); font-weight: italic"
+        >JavaScript</span
+      >
+      <!-- Add p and pre tags -->
+      <p>p represents paragraph without preserving spacing</p>
+      <pre>
+      Text in         a pre element
+      is displayed in a fixed-width
+      font, and it preserves
+      both      spaces and
+      line breaks
+      </pre>
+      <!--Add an unordered list of 4 items to your page using ul and li tags. -->
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <ul>
+          <li>Sub Item 4.1</li>
+          <li>Sub Item 4.2</li>
+        </ul>
+      </ul>
+      <!--Add an ordered list of 3 items to your page using ol and li tags. -->
+
+      <ol>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+      </ol>
+      <!--Add a nested list of 2 items inside the last item of either the unordered or ordered list above.-->
+      <!--Wrap all the elements you've created so far with an article tag.-->
+    </article>
+  </body>
+</html>
+<!--adding another article below the first one, with a unique h2 tag inside this newly created article.-->
+<article>
+  <h2>The Elements: Part 2</h2>
+  <!--Create a table by copying from a site:-->
+  <table>
+    <caption>
+      The Three Most Popular JavaScript Libraries
+    </caption>
+    <thead>
+      <!--Now the header is missing for the third column. 
+  Fix this by adding a colspan attribute to the first th tag to make it span two columns.Note: I add it to the second th
+  to make more sense of the table content that I copied-->
+      <tr>
+        <th>Library</th>
+        <th colspan="2">jQuery</th>
+        <th>Bootstrap</th>
+        <th>Modernizr</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Market Share</td>
+        <td>96.1%</td>
+        <!--Add a third cell inside one of the rows. Observe how the table lost its shape.-->
+        <td>97.1%</td>
+        <td>17.0%</td>
+        <td>14.3%</td>
+      </tr>
+      <!--Each table row needs to account for the same amount of columns, 
+    and violating this rule will cause your table to lose shape. 
+    Fix the table by adding the missing td tag on the other row/s.-->
+      <tr>
+        <td>Previous Market Share</td>
+        <td>90.1%</td>
+        <td>10.0%</td>
+        <td>15.0%</td>
+        <td>10.3%</td>
+      </tr>
+      <tr>
+        <td>Absolute Usage</td>
+        <td>70.4%</td>
+        <td>60.0%</td>
+        <td>12.4%</td>
+        <td>10.5%</td>
+      </tr>
+      <!--Add a third row with 2 columns to the table and 
+    add a rowspan="2" attribute to one of the td tags on the second row, then observe what happens.-->
+      <td>Previous Absolute Usage</td>
+      <td>00.4%</td>
+      <td>00.0%</td>
+      <td rowspan="2">00.4%</td>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="5">
+          <em>Market Share</em> refers to the percentage of sites using any
+          JavaScript library that use the specified library.
+          <em>Absolute Usage</em> is the percent of websites surveyed, including
+          those that use no JavaScript libraries, that use the specified
+          library.
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+  <!--Create another row by copying a tr tag, together with its children, below the first row.-->
+</article>
+
+<!--Add another article below the second one, with a unique h2 tag inside this newly created article.-->
+<article>
+  <!--Add an image to your website using the code below. Add a value for the alt attribute, 
+  and experiment with using one, then both of the width and height attributes to change the size of the image.-->
+  <img src="https://picsum.photos/400/400" alt="First pic" />
+  <img src="https://picsum.photos/200/400" alt="Second pic" />
+  <img src="https://picsum.photos/200/200" alt="Third pic" />
+
+  <!--Add a second image using the html_lab_image.jpg file from the assets folder. 
+Give it an alt attribute and make it appear the same size as the first image.
+Note: I convert the html lab image to png as it looks better and rename the file under the local folder asset-->
+  <img
+    src="assets\lab2image.png"
+    height="400px"
+    width="400px"
+    alt="Size to follow the first pic"
+  />
+  <!--Add a video using the example code-->
+  <video autoplay width="250">
+    <source src="/assets/flower.webm" type="video/webm" />
+    Sorry, your browser doesn't support embedded videos.
+  </video>
+  <!--Add an audio element using the example code below, then add a caption to it using figure and figcaption:-->
+  <audio autoplay src="/assets/t-rex-roar.mp3">
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+
+  <!--Try removing the controls attribute and adding autoplay attribute to both audio and video tags. Observe the changes.-->
+</article>
+
+<footer>Copyright &copy; 2024</footer>

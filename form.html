@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="index.html">Home</a>
+        <a href="form.html">Form</a>
+      </nav>
+    </header>
+
+    <main></main>
+    <!-- Add a form using a <form> tag like this:
+      <form method="POST" action="http://127.0.0.1:5500/form.html">
+      </form>
+      Note: I have combined point 1 and 2 of this form instructions.
+  Inside the form, add 2 text inputs - one for inputting first name and 
+  the second one for inputting last name.
+Remember to add a label for each input. 
+Wrap each input, together with its label, in a div to stack the inputs one below another.
+-->
+
+    <form action="/action_page.php" method="post" target="_blank">
+      <div>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" /><br /><br />
+      </div>
+      <div>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" /><br /><br />
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+
+    <!--Add 3 radio buttons using <input type="radio" ...>, allowing 
+     the user to select their favourite coding language. Remember to label the inputs and add name and value attributes.
+     Wrap the radio buttons in a div to separate them from the other form fields.-->
+    <div>
+      <fieldset>
+        <legend>
+          Select your favourite coding language (you can choose more than one):
+        </legend>
+
+        <div>
+          <input type="radio" id="js" name="codinglang" value="JavaScript" />
+          <label for="js">JavaScript</label>
+        </div>
+
+        <div>
+          <input type="radio" id="python" name="codinglang2" value="Python" />
+          <label for="py">Python</label>
+        </div>
+
+        <div>
+          <input type="radio" id="ts" name="codinglang3" value="typeScript" />
+          <label for="ts">typeScript</label>
+        </div>
+      </fieldset>
+    </div>
+    <!--Add 3 checkboxes using <input type="checkbox" ...>, allowing the user to select the types of vehicle they own.
+  Remember to label the inputs and add name and value attributes.
+  Wrap the checkboxes in a div to separate them from the other form fields.-->
+    <div>
+      <fieldset>
+        <legend>
+          Choose your vehicle type (you can choose more than one):
+        </legend>
+
+        <div>
+          <input type="checkbox" id="vehicle" name="SUV" checked />
+          <label for="SUV">SUV Auto</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="vehicle2" name="CRV" />
+          <label for="CRV">CRV Manual</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="vehicle3" name="4by4" />
+          <label for="4by4">4by4 Manual</label>
+        </div>
+      </fieldset>
+    </div>
+    <!--Add a dropdown element to your form using <select> and <option> tags, 
+      allowing the user to choose the brand of car they own. 
+      Remember to label the dropdown and add a value attribute for each option. -->
+    <div>
+      <label for="carBrands-select">Choose a car based on the brand:</label>
+
+      <select name="carBrands" id="carBrands-select">
+        <option value="">--Please choose a brand--</option>
+        <option value="honda">Honda</option>
+        <option value="kia">KIA</option>
+        <option value="subaru">Subaru</option>
+        <option value="lexus">Lexus</option>
+        <option value="bmw">BMW</option>
+        <option value="mercedes">Mercedes</option>
+      </select>
+    </div>
+    <br />
+    <!--Add a submit button at the end of the form:-->
+
+    <button type="submit">Submit form</button> 
+
+    <footer>Copyright &copy; 2024</footer>
+  </body>
+</html>
