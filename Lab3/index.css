@@ -1,0 +1,141 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: purple;
+}
+
+.background-1 {
+  background: #68b0ab;
+}
+
+.background-2 {
+  background: #8fc0a9;
+}
+
+.background-3 {
+  background: #c8d5b9;
+}
+.background-31 {
+  background: #c8d5b9;
+}
+
+.background-4 {
+  background: #faf3dd;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.h-80 {
+  height: 80px;
+}
+
+.h-400 {
+  height: 400px;
+}
+
+.w-80 {
+  width: 80px;
+}
+
+/* Add your answers here, do not modify the above CSS */
+/*1 Read all elements in the index.html file*/
+/*2 The values of the flex change the sizes of the boxes. The auto value will help to structured 
+the content of the box if there were any content*/
+.flex-container {
+  display: flex;
+}
+
+.flex-item-1 {
+  display: flex;
+  flex: 2 1 auto;
+}
+.flex-item-2 {
+  display: flex;
+  flex: 3 2;
+}
+.flex-item-3 {
+  display: flex;
+  flex: 4 3;
+}
+.flex-item-4 {
+  display: flex;
+  flex: 5 4;
+}
+/*3 the felx-center class is written as: m-20 flex-container flex-cente inside the html file.
+Therefore, I use the m-20, which is the first word of the class that will be recognised 
+as a class selector*/
+.m-20 {
+  justify-content: start;
+  align-items: flex-end;
+}
+.m-20 {
+  justify-content: center;
+  align-items: center;
+}
+/*4 the wrap-reverse makes the wrap executed in reverse.*/
+.flex-space-between {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+/*5*/
+.flex-basis-item-50 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-basis: 50%;
+}
+.flex-basis-item-50 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 25%;
+}
+/*6 Please note that the felx-container class is the flex wrap class in the CSS and html file*/
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-basis: 50%;
+  flex-direction: column;
+}
+
+/*7* I have added in the default CSS a class .background31 because if I let .background3 in use for this
+question, no.5 point 3 that originally has background-3 will be affected*/
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-height: fit-content;
+}
+.background-3 {
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+  padding: 1rem;
+  margin: 6px;
+  justify-content: center;
+  flex-grow: 1;
+}
+.fourth-item {
+  order: +1;
+}
