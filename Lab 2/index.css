@@ -1,0 +1,403 @@
+/* I. Selectors */
+/* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
+/*1.1*/
+
+article {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid rgb(25, 5, 113);
+}
+/*1.2*/
+.style-me1 {
+  color: red;
+}
+/*1.3*/
+#style-me2 {
+  color: blue;
+}
+/*1.4*/
+#style-me2.style-me1 {
+  color: purple;
+}
+
+/* Put styles for questions 2.1 and 2.2 here */
+/*2.1*/
+.my-descendants-are-styled {
+  background-color: red;
+}
+/*2.2*/
+.my-children-are-styled {
+  background-color: lightgreen;
+}
+
+/* II. Box model and common properties */
+/* Put styles for questions 1-8 here */
+/*1 I put several .box css styles to show the variations of units required, code wise.*/
+.box {
+  background-color: turquoise;
+  padding: all;
+  margin: 100px;
+  width: 50px;
+  height: 50rem;
+}
+.box {
+  background-color: turquoise;
+  padding: 4% 100px;
+  margin: 10em;
+  width: 60rem;
+  height: 50rem;
+}
+
+.box {
+  background-color: turquoise;
+  padding: 4% 100px 50em 3px;
+  margin: 10em;
+  width: 200px;
+  height: 100px;
+}
+.box {
+  background-color: turquoise;
+  padding: 4% 100px 50em 3px;
+  margin: 10em;
+  width: 50vw;
+  height: 25vh !important;
+}
+
+/*2* integrated to no.1 above. Answer for 2.3: Resizing while using vh and vw as units allows a flexible 
+resizing following the browser adjustments/
+
+
+/*3 I copy only the last style for the .box for this question and from there expand to two more styles
+to meet the requirement of the lab. Changing the border to 10px does change the presentation of 
+the surrounding elements*/
+.box {
+  background-color: turquoise;
+  padding: 4% 100px 50em 3px;
+  border: 15px dashed #ff0000;
+  margin: 10em;
+  width: 50vw;
+  height: 10vh;
+}
+.box {
+  background-color: turquoise;
+  padding: 4% 100px 50em 3px;
+  border: 10px dotted purple;
+  margin: 10em;
+  width: 20vw;
+  height: 5vh;
+}
+.box {
+  background-color: turquoise;
+  padding: 4% 100px 50em 3px;
+  border: 10px solid hsl(300, 76%, 72%);
+  margin: 20em;
+  width: 20vw;
+  height: 20vh !important;
+}
+
+/*4 I copy the last style from question 3 above to create 2 more box-sizing property's variations
+Content box: width and height applied to the content box and any border padding will be just added to
+the final rendered size. 
+Border box: Will absorb any extra width and height as every width and height was included.*/
+.box {
+  box-sizing: border-box;
+  background-color: turquoise;
+  padding: 4% 100px 50em 3px;
+  border: 10px solid hsl(300, 76%, 72%);
+  margin: 20em;
+  width: 20vw;
+  height: 20vh !important;
+}
+
+.box {
+  box-sizing: content-box;
+  background-color: turquoise;
+  padding: 4% 100px 50em 3px;
+  border: 10px solid hsl(300, 76%, 72%);
+  margin: 20em;
+  width: 20vw;
+  height: 20vh !important;
+}
+/*5 I copied the last .box style from no.4 above and expand it to show the answer of this question.
+Note: Since I put auto overflow as the last css style, it creates scroll bars necessary to make the content readable.*/
+.box {
+  box-sizing: content-box;
+  background-color: turquoise;
+  padding: 4% 100px 50em 3px;
+  border: 10px solid hsl(300, 76%, 72%);
+  margin: 20em;
+  width: 10px;
+  height: 50px !important;
+  overflow: visible;
+}
+.box {
+  box-sizing: content-box;
+  background-color: turquoise;
+  padding: 4% 100px 50em 3px;
+  border: 10px solid hsl(300, 76%, 72%);
+  margin: 20em;
+  width: 10px;
+  height: 50px !important;
+  overflow: hidden;
+}
+.box {
+  box-sizing: content-box;
+  background-color: turquoise;
+  padding: 4% 100px 50em 3px;
+  border: 10px solid hsl(300, 76%, 72%);
+  margin: 20em;
+  width: 10px;
+  height: 50px !important;
+  overflow: scroll;
+}
+.box {
+  box-sizing: content-box;
+  background-color: turquoise;
+  padding: 4% 100px 50em 3px;
+  border: 10px solid hsl(300, 76%, 72%);
+  margin: 20em;
+  width: 10px;
+  height: 50px !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+/*included here is the outline requirement for question no. 6. 
+Outline is just a line-styled highlight of a border. Its position is outside the border.*/
+.box {
+  box-sizing: content-box;
+  background-color: turquoise;
+  padding: 4% 100px 50em 3px;
+  border: 10px solid hsl(300, 76%, 72%);
+  margin: 20em;
+  width: 20px;
+  height: 100px !important;
+  overflow: auto;
+  outline: #897720 solid 10px;
+}
+/*7 I copy the last style from the above question*/
+.box {
+  box-sizing: content-box;
+  background-color: turquoise;
+  padding: 4% 100px 50em 3px;
+  border: 10px solid hsl(300, 76%, 72%);
+  border-radius: 10px;
+  margin: 20em;
+  width: 20px;
+  height: 100px;
+  overflow: auto;
+  outline: #897720 solid 10px;
+}
+.box {
+  box-sizing: content-box;
+  background-color: turquoise;
+  padding: 4% 100px 50em 3px;
+  border: 10px solid hsl(300, 76%, 72%);
+  border-radius: 10em;
+  margin: 20em;
+  width: 20px;
+  height: 100px;
+  overflow: auto;
+  outline: #897720 solid 10px;
+}
+.box {
+  box-sizing: content-box;
+  background-color: turquoise;
+  padding: 4% 100px 50em 3px;
+  border: 10px solid hsl(300, 76%, 72%);
+  border-radius: 20rem;
+  margin: 20em;
+  width: 20px;
+  height: 100px;
+  overflow: auto;
+  outline: #897720 solid 10px;
+}
+.box {
+  box-sizing: content-box;
+  background-color: turquoise;
+  padding: 150px;
+  border: 10px solid hsl(300, 76%, 72%);
+  border-radius: 50%;
+  margin: 20px;
+  width: 250px;
+  height: 250px !important;
+  overflow: auto;
+  outline: #897720 solid 10px;
+}
+/*8 I use the last .box style from no.7 to answer no.8*/
+.box {
+  box-sizing: content-box;
+  background-color: turquoise;
+  padding: 150px;
+  border: 10px solid hsl(300, 76%, 72%);
+  border-radius: 50%;
+  margin: 20px;
+  width: 250px;
+  height: 250px !important;
+  overflow: auto;
+  outline: #897720 solid 10px;
+  background-image: url(assets/img1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box {
+  box-sizing: content-box;
+  background-color: turquoise;
+  padding: 150px;
+  border: 10px solid hsl(300, 76%, 72%);
+  border-radius: 50%;
+  margin: 20px;
+  width: 250px;
+  height: 250px !important;
+  overflow: auto;
+  outline: #897720 solid 10px;
+  background-image: url(assets/img1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+/* III. Positioning */
+/* Put styles for questions 1-3 here */
+/*1*/
+div.position-absolute {
+  position: absolute;
+  top: 0;
+}
+div.position-absolute {
+  position: absolute;
+  bottom: 0;
+}
+div.position-absolute {
+  position: absolute;
+  background-color: unset;
+}
+
+/*2 The position relative uses the document body, to move along the page scrolling as it has no ancestor. 
+The absolute position is automatically put on top of the page as it is the nearest ancestor.
+The left and right position assist to re-organise the position of the sentences. 
+The right position will move the sentence for the value stated from the left.*/
+div.position-relative {
+  position: relative;
+  background-color: goldenrod;
+}
+div.position-relative {
+  position: relative;
+  left: 0;
+  background-color: goldenrod;
+}
+div.position-relative {
+  position: relative;
+  right: 50em;
+  background-color: goldenrod;
+}
+div.position-absolute {
+  position: absolute;
+  left: 10em;
+  background-color: unset;
+}
+div.position-absolute {
+  position: absolute;
+  right: 20em;
+  background-color: unset;
+}
+/*3*/
+.position-sticky {
+  position: sticky;
+  background-color: darkgray;
+  top: 5em;
+}
+
+/* IV. Styling text */
+/* Put styles for questions 1-10 here */
+/*1 to 4*/
+.text-style {
+  color: maroon;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: bold 200;
+}
+.text-style {
+  color: maroon;
+  font-size: 2em;
+  line-height: 80%;
+  font-weight: lighter 500;
+}
+
+/*5/ I choose Montserrat  as in font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto; and embedd it to the following class of css style to answer this question*/
+.text-style {
+  color: maroon;
+  font-size: 2em;
+  line-height: 80%;
+  font-weight: lighter 500;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  text-align: justify;
+  letter-spacing: normal;
+  word-spacing: 1%;
+  text-transform: uppercase;
+  text-decoration: wavy;
+}
+.text-style {
+  color: maroon;
+  font-size: 2em;
+  line-height: 80%;
+  font-weight: lighter 500;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  text-align: justify;
+  letter-spacing: 0cqmax;
+  word-spacing: 0.5ch;
+  text-transform: lowercase;
+  text-decoration: underline;
+}
+/* V. Styling links */
+/* Put styles for questions 1-3 here */
+/*1 to 3 The font-style for the a:visited will not work due to privacy reason set by browsers.*/
+a {
+  color: rgb(52, 8, 17);
+  font-size: 18px;
+  font-weight: 20px;
+  text-decoration: underline;
+}
+a:link {
+  color: rgb(143, 155, 73);
+}
+/*2*/
+a:hover{
+color:blue;
+text-decoration: overline;
+}
+a:active{
+    color:darkred;
+    text-decoration:wavy;
+}
+a:hover{
+    color:darkorchid;
+    text-decoration:line-through;
+}
+a:visited{
+    color:lightskyblue;
+    text-decoration:line-through;
+    font-style: italic;
+}
+/* VI. calc() */
+/* Put styles for questions 1-3 here */
+/*1*/
+.calc-style{
+    width: 100vw;
+}
+.calc-style{
+    width: calc(100vw - 100px); ;
+}
+/*2*/
+.fixed-width-col {
+    width: 350px;
+    display: inline-block;
+}
+.fluid-col{
+    display: inline-block;
+    width: 350px;
+    width:calc(100%-350px);
+}
